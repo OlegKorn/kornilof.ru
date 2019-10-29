@@ -1,0 +1,354 @@
+/*quotes*/
+#quotes-container {
+  width: 95%;
+  margin: 0 3rem 1rem 3rem;
+  padding: 0 2rem 0 2rem;
+  float: center;
+  font-size: .95rem;
+  text-align: center;
+  font-style: italic;
+}
+.mail-text {
+  font-size: .75rem;
+  color: hsla(53, 100%, 62%, 1);  
+}
+/*section #tran*/
+#tran {
+  opacity: 1;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  padding: 13.5rem 0;
+  text-align: center;
+  color: white;
+  background: url("../img/3o7WTJaLfWLzOZy5lm.gif") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+/*section #about*/
+#serv {
+	opacity: 1;
+  width: 100%;
+  height: 100vh;
+  /*padding: 10.5rem 0; убираем - для более адекватного применения скрипта opacity*/
+  text-align: center;
+  background: url("../img/tumblr_oswbstB0721tej973o1_1280.png") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+} 
+  #container-serv {
+    padding: 10.5rem 0; /*делаем содержимое секции более-менее по центру*/
+  }
+  #serv p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 25px; 
+    background: hsla(104, 100%, 55%, 0.43);
+    color: hsla(62, 26%, 94%, 1);
+  }
+  
+/**/
+/**/
+/**/
+#about {
+  opacity: 1;
+  width: 100%;
+  height: 100vh;
+  /*padding: 10.5rem 0; убираем - для более адекватного применения скрипта opacity*/
+  background: url("../img/w_sm.gif") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;  
+}
+  #container-about { /*делаем содержимое секции более-менее по центру*/
+    padding: 11.5rem 0;
+  }
+  @keyframes fallPerspective {
+	100% { 
+          transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; 
+    }
+  }
+ 
+body {
+  font-family: "Press Start 2P";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black; 
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%; 
+}
+  
+section {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+  background: hsla(270, 100%, 61%, 0.75);
+  color: hsla(128, 26%, 94%, 1);
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 25px; 
+  background: hsla(340, 100%, 67%, 0.81);
+  color: hsla(128, 26%, 94%, 1);
+  }
+  @media (min-width: 768px) {
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0 0 1.5rem; 
+  } 
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: hsla(243, 99%, 61%, 1); 
+  font-weight: 400;
+}
+  a:focus, a:hover {
+    text-decoration: none;
+    color: black; 
+  }
+
+#mainNav {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black; 
+}
+  #mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    border: 1px solid white;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1rem;
+  }
+  #mainNav a {
+    color: hsla(307, 49%, 100%, 1); 
+    background: hsla(76, 0%, 16%, .2);
+    margin-left: .5rem;
+    font-size: .75rem;
+  }
+  #mainNav a:hover {
+    transition: .25s;
+    color: black;
+    background: hsla(128, 26%, 94%, 1);
+  }
+  #mainNav a:not(:hover) {
+    transition: .35s;
+  }
+  #mainNav .navbar-nav .nav-item {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+    margin: auto;
+  }
+    #mainNav .navbar-nav .nav-item:hover {
+      color: fade(white, 80%);
+      outline: none;
+      background-color: transparent; 
+    }
+    #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+      outline: none;
+      background-color: transparent; 
+    }
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent; 
+    }
+      #mainNav.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: black; 
+      }
+      #mainNav .nav-link.active {
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3); }
+        #mainNav .nav-link.active:hover {
+          color: white;        
+      } 
+  }
+
+.masthead {
+  opacity: 1;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 13.5rem 0;
+  text-align: center;
+  color: white;
+  background: url("../img/waneella-16.gif") no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+  .masthead .intro-body {
+    display: table-cell;
+    vertical-align: middle; 
+  }
+    .masthead .intro-body .brand-heading {
+      font-size: 2rem; 
+    }
+    .masthead .intro-body .intro-text {
+      font-size: 1rem; 
+    }
+  @media (min-width: 768px) {
+    .masthead {
+      height: 100%;
+      padding: 0; 
+  }
+      .masthead .intro-body .brand-heading {
+        font-size: 2.5rem; 
+      }
+      .masthead .intro-body .intro-text {
+        font-size: 1.3rem; 
+      } 
+  }
+
+
+
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 200px;
+    padding-bottom: 200px; 
+  }
+}
+
+.btn {
+  font-weight: 400;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0; 
+}
+
+#tran .btn-default {
+  color: hsla(82, 97%, 100%, 1);
+  border: 1px solid hsla(82, 97%, 100%, 1);
+  border-radius: 6%;
+  background-color: black; 
+}
+  #tran .btn-default:focus, #tran .btn-default:hover {
+    color: black;
+    border: 1px solid hsla(82, 97%, 98%, 1);
+    outline: none;
+    background-color: hsla(82, 97%, 98%, 1);
+    font-weight: 900;    
+  }
+  #tran h1,h2,h3,h4,h5 {
+    color: black;
+    background: hsla(82, 97%, 98%, 1);
+  }
+  #tran p {
+    color: hsla(60, 100%, 0%, 1);
+    background: hsla(90, 100%, 53%, 0.6);
+  }
+
+.btn-default {
+  color: hsla(82, 97%, 100%, 1);
+  border: 1px solid hsla(82, 97%, 100%, 1);
+  border-radius: 6%;
+  background-color: transparent; 
+}
+  .btn-default:focus, .btn-default:hover {
+    color: black;
+    border: 1px solid white;
+    outline: none;
+    background-color: hsla(82, 97%, 98%, 1);
+    font-weight: 900;    
+  }
+ul.banner-social-buttons {
+  margin-top: 0; 
+}
+  @media (max-width: 1199px) {
+    ul.banner-social-buttons {
+      margin-top: 15px; 
+    } 
+  }
+  @media (max-width: 767px) {
+    ul.banner-social-buttons li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0; 
+    }
+      ul.banner-social-buttons li:last-child {
+        margin-bottom: 0; 
+      } 
+  }
+
+footer {
+  padding: 50px 0; 
+}
+  footer p {
+    font-size: 14px;
+    margin: 0; 
+  }
+
+::-moz-selection {
+  background: hsla(0, 100%, 63%, 1);
+  color: hsla(0, 100%, 0%, 0.79);
+  font-weight: 900;
+  text-shadow: 1px 0 hsla(117, 100%, 42%, 0.25); 
+}
+
+::selection {
+  background: hsla(0, 100%, 63%, 1);
+  color: hsla(0, 100%, 0%, 0.79);
+  font-weight: 900;
+  text-shadow: 1px 0 hsla(117, 100%, 42%, 0.25);
+}
+
+img::selection {
+  background: transparent;
+  color: white;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
